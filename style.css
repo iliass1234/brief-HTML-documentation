@@ -1,0 +1,135 @@
+:root{
+    color:#222222;
+    font-family:sans-serif;
+    scroll-behavior: smooth;
+    
+  }
+  #table{
+      margin-top: 30px;
+      background-color: rgb(236, 255, 236);
+      max-width: 600px;
+      border: solid;
+      border-width: 1px;
+      border-color: transparent;
+      border-radius: 5px;
+      
+  }
+  #table > .row{
+      padding: 10px 0px;
+      border: solid;
+      border-width: 1px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+  }
+
+  #row0{
+      background-color: rgb(218, 226, 223);
+      font-weight: 600;
+  }
+  #row2{
+    background-color: rgb(218, 226, 223);
+  }
+  .tag{
+    color:red;
+  }
+  .f{color:blue;}
+  body{
+    margin:0px;
+    display: flex;
+    gap:0px;
+    background-color: #ffffff;    
+  }
+  #main-doc{
+    padding-top: 0px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    background-color:#ffffff;
+    width:100%;
+    height: 100%;
+    margin-left: 240px;
+  }
+  #title{
+      line-height: 25px;
+      font-size: 25px;
+      margin-left: 30px;
+  }
+  a{
+    scroll-behavior: smooth;
+    width:87.5%;
+    text-decoration:none;
+    color:inherit;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left: 30px;
+  }
+  a:hover{
+
+    background-color:#292525;
+    color:#ffffff;
+    transition: 0.2s;
+  }
+  p{
+      width: 100%;
+      max-width: 800px;
+  }
+  ul{
+    font-weight:400;
+    line-height:25px;
+    font-size: 17px;
+  }
+  section{
+    margin-top:30px;
+  }
+  #navbar{
+    box-shadow: 10px 60px 40px rgba(2, 0, 15, 0.349);
+    border-top-right-radius: 50px;
+    margin-top: 30px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    padding: 40px 0px;
+    background-color: #d6dee4;
+    width:240px;
+    height: 100%;
+    max-width:700px;
+  }
+  header{
+    font-size:40px;
+  }
+  .code-area{
+      
+      border-radius: 5px;
+      padding: 50px 10px;
+      width: 100%;
+      max-width: 600px;
+      height: 1px;
+      background-color: rgb(212, 212, 212);
+  }
+  #real-code{
+      background-color: rgb(67, 65, 77);
+      padding: 6px;
+      padding-left: 20px;
+      border-radius: 3px;
+      width: 100%;
+      max-width: 600px;
+      color: rgb(255, 255, 255);
+    }
+  code{
+    font-family: Consolas,"courier new";
+    color: rgb(255, 56, 56);
+    padding: 2px;
+    line-height:35px;
+    font-size: 17px;
+  }
+  #forCode{
+    margin-top:0px;
+    border-radius:7px;
+    background-color:#001122c9;
+    padding:10px;
+    padding-left:20px;
+    width:90%;
+    max-width:700px;
+}
