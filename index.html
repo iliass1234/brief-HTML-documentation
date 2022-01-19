@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <nav id="navbar">
+        <header id="title"><strong style="font-size: 60px;color: rgb(0, 0, 0);">HTML</strong> Documentation</header>
+        <a href="#introduction">HTML Introduction</a>
+        <a href="#forCode">HTML Syntax</a>
+        <a href="#HTML_Element">HTML Element</a>
+        <a href="#HTML_Attributes">HTML Attributes</a>
+        <a href="#introduction">HTML Introduction</a>
+        <a href="#introduction">HTML Introduction</a>
+        <a href="#introduction">HTML Introduction</a>
+        <a href="#introduction">HTML History</a>
+        
+      </nav>
+    
+    
+    <main id="main-doc">
+    
+      <section id="introduction" class="main-section">
+        <header>HTML Introduction</header>  
+        <p>HTML is the standard markup language for creating Web pages.</p>
+         <h3>What is HTML?<h3>
+           <ul>
+             <li>HTML stands for Hyper Text Markup Language</li>
+             <li>HTML is the standard markup language for creating Web pages</li>
+             <li>HTML describes the structure of a Web page</li>
+             <li>HTML consists of a series of elements</li>
+             <li>HTML elements tell the browser how to display the content</li>
+             <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+           </ul>
+           <h3>A Simple HTML Document</h3>
+           <h4>Example:</h4>
+             <div id="forCode">
+           <code style="color: white;">
+             &lt!DOCTYPE html&gt</br>
+              &lthtml&gt</br>
+              &lthead&gt</br>
+              &lttitle&gtPage Title&lt/title&gt
+              &lt/head&gt</br>
+              &ltbody&gt</br>
+              &lth1&gtMy First Heading&lt/h1&gt</br>
+              &ltp&gtMy first paragraph.&lt/p&gt</br>
+              &lt/body&gt</br>
+              &lt/html&gt
+           </code>
+        </div>
+      </section>  
+      <section class="main-section" id="HTML_Element">
+        <header>HTML Element</header>
+        <h4>What is an HTML Element?</h4>
+        <p>An HTML element is defined by a start tag, some content, and an end tag:</p>
+        <h5 style="font-size: medium; font-weight: 300;">&lt<strong style="color: red;">tagname</strong>&gtContent goes here...&lt<strong style="color: red;">/tagname</strong>&gt</h5>
+          <p>The HTML <strong>element</strong> is everything from the start tag to the end tag:</p>
+          <code class='tag'>
+            <code class='f'>&lt</code>h1<code class='f'>&gt</code>
+          </code>
+          My First Heading
+          <code class='tag'>
+            <code class='f'>&lt</code>/h1<code class='f'>&gt</code>
+          </code></br>
+          <code class='tag'>
+            <code class='f'>&lt</code>p<code class='f'>&gt</code>
+          </code>
+          My first paragraph.
+          <code class='tag'>
+            <code class='f'>&lt</code>/p<code class='f'>&gt</code>
+          </code>
+
+          <div id="table">
+            <div class="row" id="row0">
+                <span>Start tag</span><span>Element content</span><span>End tag</span>
+            </div>
+            <div class="row" id="row1">
+                <span>&lth1&gt</span><span>My First Heading</span><span>&lt/h1&gt</span>
+            </div>
+            <div class="row" id="row2">
+                <span>&ltp&gt</span><span>My first paragraph.</span><span>&lt/p&gt</span>
+            </div>
+            <div class="row" id="row3">
+                <span>&ltbr&gt</span><span>none</span><span>none</span>
+            </div>
+        </div>
+      
+      
+      </section>  
+      <section class="main-section" id="HTML_Attributes">
+        <header>HTML Attributes</header>
+
+            <ul>
+                <li>All HTML elements can have attributes</li> 
+                <li>Attributes provide additional information about elements</li> 
+                <li>Attributes are always specified in the start tag</li> 
+                <li>Attributes usually come in name/value pairs like: name="value"</li> 
+            </ul>    
+            <br>
+            <hr>
+            <h2>The href Attribute:</h2>
+            <h4>The <code>&lta&gt</code> tag defines a hyperlink. The <code>href</code> attribute specifies the URL of the page the link goes to:</h4>
+            <h4>Example:</h4>    
+            <p id="real-code">&lta <code style="color: rgb(85, 255, 107);">href</code>="https://www.freecodecamp.com"&gtVisit freecodecamp&lt/a&gt</p>
+            <hr>
+            <h2>The src Attribute:</h2>
+            <p>The <code>&ltimg&gt</code> tag is used to embed an image in an HTML page. The <code>src</code> attribute specifies the path to the image to be displayed:</p>
+            <p id="real-code">&ltimg <code style="color: rgb(85, 255, 107);">src</code>="img_girl.jpg"&gt</p>
+            <p>There are two ways to specify the URL in the <code>src</code> attribute:</p> 
+            <p><strong>1. Absolute URL</strong> - Links to an external image that is hosted on another website. Example: src="https://www.freecodecamp.com/images/img_girl.jpg".</p> 
+            <p><strong>Notes:</strong> External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.</p>
+            <p><strong>2. Relative URL</strong> - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".</p>
+            <p><strong>Tip:</strong> It is almost always best to use relative URLs. They will not break if you change domain.</p>
+            <hr>
+            <h2>The width and height Attributes:</h2>
+            <p>The <code>&ltimg&gt</code> tag should also contain the width and height attributes, which specifies the width and height of the image (in pixels):</p>
+            <h4>Example:</h4>
+            <p id="real-code">&ltimg <code style="color: rgb(85, 255, 107);">src</code>="img_girl.jpg" width="500" height="600"&gt</p>
+
+            <hr><br>
+            <h2>Attributes summary:</h2>
+            <ul>
+                <li>All HTML elements can have attributes</li>
+                <li>The href attribute of <code>&lta&gt</code> specifies the URL of the page the link goes to</li>
+                <li>The src attribute of <code>&ltimg&gt</code>  specifies the path to the image to be displayed</li>
+                <li>The width and height attributes of <code>&ltimg&gt</code> provide size information for images</li> 
+                <li>The alt attribute of <code>&ltimg&gt</code> provides an alternate text for an image</li> 
+                <li>The style attribute is used to add styles to an element, such as color, font, size, and more</li> 
+                <li>The lang attribute of the <code>&lthtml&gt</code> tag declares the language of the Web page</li> 
+                <li>The title attribute defines some extra information about an element</li> 
+            </ul>
+      </section>  
+      <section class="main-section">
+        <header>idea generator</header>
+        <p></p>
+        
+        <p></p>
+      
+      
+      </section>  
+        <section class="main-section">
+        <header>java</header>
+        <p></p>  
+          <code>hello world</code>
+        <p></p>
+      
+      
+      </section>  
+      <section class="main-section">
+        <header>c++ loops </header>
+        <p></p>  
+        
+        <p></p>
+      
+      
+      </section>  
+      <section class="main-section">
+        <header>javascript event loop</header>
+        <p></p>  
+        
+        <p></p>
+      
+      
+      </section>  
+      <section class="main-section">
+        <header>idea generator</header>
+        <p></p>  
+      
+      
+      </section>  
+      
+    </main>
+
+
+
+
+
+
+
+</body>
+</html>
