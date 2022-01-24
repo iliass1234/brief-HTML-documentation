@@ -7,29 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
-
-
-
-
-    <nav id="navbar">
+<body> 
+  <nav id="navbar">
+  
         <header id="title"><strong style="font-size: 60px;color: rgb(0, 0, 0);">HTML</strong> Documentation</header>
-        <a href="#introduction">HTML Introduction</a>
-        <a href="#forCode">HTML Syntax</a>
-        <a href="#HTML_Element">HTML Element</a>
-        <a href="#HTML_Attributes">HTML Attributes</a>
-        <a href="#introduction">HTML Introduction</a>
-        <a href="#introduction">HTML Introduction</a>
-        <a href="#introduction">HTML Introduction</a>
-        <a href="#introduction">HTML History</a>
+        <a class="nav-link" href="#HTML_Introduction">HTML Introduction</a>
+        <a class="nav-link" href="#forCode">HTML Syntax</a>
+        <a class="nav-link" href="#HTML_Element">HTML Element</a>
+        <a class="nav-link" href="#Nesting_Elements">Nesting elements</a>
+        <a class="nav-link" href="#HTML_Images">HTML Images</a>
+        <a class="nav-link" href="#HTML_Attributes">HTML Attributes</a>
+        <a class="nav-link" href="#HTML_Links">HTML Links</a>
+        <a class="nav-link" href="#HTML_History">HTML History</a>
         
-      </nav>
-    
+ </nav>
     
     <main id="main-doc">
-    
-      <section id="introduction" class="main-section">
+
+    <!-- ---------------------------intro---------------------------- -->
+
+      <section id="HTML_Introduction" class="main-section">
         <header>HTML Introduction</header>  
         <p>HTML is the standard markup language for creating Web pages.</p>
          <h3>What is HTML?<h3>
@@ -58,28 +55,21 @@
            </code>
         </div>
       </section>  
+
+      <!-- ---------------------------elements---------------------------- -->
+
       <section class="main-section" id="HTML_Element">
         <header>HTML Element</header>
         <h4>What is an HTML Element?</h4>
         <p>An HTML element is defined by a start tag, some content, and an end tag:</p>
         <h5 style="font-size: medium; font-weight: 300;">&lt<strong style="color: red;">tagname</strong>&gtContent goes here...&lt<strong style="color: red;">/tagname</strong>&gt</h5>
           <p>The HTML <strong>element</strong> is everything from the start tag to the end tag:</p>
-          <code class='tag'>
-            <code class='f'>&lt</code>h1<code class='f'>&gt</code>
-          </code>
-          My First Heading
-          <code class='tag'>
-            <code class='f'>&lt</code>/h1<code class='f'>&gt</code>
-          </code></br>
-          <code class='tag'>
-            <code class='f'>&lt</code>p<code class='f'>&gt</code>
-          </code>
-          My first paragraph.
-          <code class='tag'>
-            <code class='f'>&lt</code>/p<code class='f'>&gt</code>
-          </code>
 
-          <div id="table">
+            <p id="real-code"><span style="color: blue;"> &lt </span><span style="color: crimson;"> h1 </span><span style="color: blue;">&gt</span> My first heading.<span style="color: blue;"> &lt </span><span style="color: crimson;"> /h1 </span><span style="color: blue;">&gt</span></p>
+
+        <p id="real-code"><span style="color: blue;"> &lt </span><span style="color: crimson;"> p </span><span style="color: blue;">&gt</span> My first paragraph.<span style="color: blue;"> &lt </span><span style="color: crimson;"> /p </span><span style="color: blue;">&gt</span></p>
+            
+        <div id="table">
             <div class="row" id="row0">
                 <span>Start tag</span><span>Element content</span><span>End tag</span>
             </div>
@@ -93,9 +83,25 @@
                 <span>&ltbr&gt</span><span>none</span><span>none</span>
             </div>
         </div>
-      
-      
       </section>  
+
+    </section>  
+
+    <!-- ---------------------------nested elemnets---------------------------- -->
+
+    <section class="main-section" id="Nesting_Elements">
+    <header>Nesting Elements</header>
+    <p>You can put elements inside other elements too — this is called <strong>nesting</strong> . If we wanted to state that our cat is <strong>very</strong> grumpy, we could wrap the word "very" in a <code>&ltstrong&gt</code> element, which means that the word is to be strongly emphasized:</p>  
+    <p id="real-code"> <code>&ltp&gt</code>The cat is &nbsp <code>&ltstrong&gt</code>very<code>&lt/strong&gt</code> &nbsp grumpy <code>&lt/p&gt</code> </p>
+    <br>
+    <p>You do however need to make sure that your elements are properly nested. In the example above, we opened the <code>&ltp&gt</code> element first, then the <code>&ltstrong&gt</code> element; therefore, we have to close the <code>&ltstrong&gt</code> element first, then the<code>&ltp&gt</code>element. The following is incorrect:</p>
+    <p id="real-code"> <code>&ltp&gt</code>cat is<code>&ltstrong&gt</code>very grumpy.<code>&lt/p&gt</code><code>&lt/strong&gt</code> </p>
+    <p style="line-height: 23px;">The elements have to open and close correctly so that they are clearly inside or outside one another. If they overlap as shown above, then your web browser will try to make the best guess at what you were trying to say, which can lead to unexpected results. So don't do it!</p>
+  
+  </section> 
+
+      <!-- ---------------------------attr------------------------------>
+
       <section class="main-section" id="HTML_Attributes">
         <header>HTML Attributes</header>
 
@@ -110,11 +116,11 @@
             <h2>The href Attribute:</h2>
             <h4>The <code>&lta&gt</code> tag defines a hyperlink. The <code>href</code> attribute specifies the URL of the page the link goes to:</h4>
             <h4>Example:</h4>    
-            <p id="real-code">&lta <code style="color: rgb(85, 255, 107);">href</code>="https://www.freecodecamp.com"&gtVisit freecodecamp&lt/a&gt</p>
+            <p id="real-code">&lta <code style="color: rgb(37, 99, 233);">href</code>="https://www.freecodecamp.com"&gtVisit freecodecamp&lt/a&gt</p>
             <hr>
             <h2>The src Attribute:</h2>
             <p>The <code>&ltimg&gt</code> tag is used to embed an image in an HTML page. The <code>src</code> attribute specifies the path to the image to be displayed:</p>
-            <p id="real-code">&ltimg <code style="color: rgb(85, 255, 107);">src</code>="img_girl.jpg"&gt</p>
+            <p id="real-code">&ltimg <code style="color: rgb(37, 99, 233);">src</code>="img_girl.jpg"&gt</p>
             <p>There are two ways to specify the URL in the <code>src</code> attribute:</p> 
             <p><strong>1. Absolute URL</strong> - Links to an external image that is hosted on another website. Example: src="https://www.freecodecamp.com/images/img_girl.jpg".</p> 
             <p><strong>Notes:</strong> External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.</p>
@@ -124,7 +130,7 @@
             <h2>The width and height Attributes:</h2>
             <p>The <code>&ltimg&gt</code> tag should also contain the width and height attributes, which specifies the width and height of the image (in pixels):</p>
             <h4>Example:</h4>
-            <p id="real-code">&ltimg <code style="color: rgb(85, 255, 107);">src</code>="img_girl.jpg" width="500" height="600"&gt</p>
+            <p id="real-code">&ltimg <code style="color: rgb(37, 99, 233);">src</code>="img_girl.jpg" width="500" height="600"&gt</p>
 
             <hr><br>
             <h2>Attributes summary:</h2>
@@ -139,52 +145,67 @@
                 <li>The title attribute defines some extra information about an element</li> 
             </ul>
       </section>  
-      <section class="main-section">
-        <header>idea generator</header>
-        <p></p>
-        
-        <p></p>
+
+      <!-- ---------------------------images------------------------------>
+
+      <section class="main-section" id="HTML_Images">
+        <header>HTML Images</header>
+        <p>Some elements have no content and are called empty elements. Take the <code>&ltimg&gt</code> element that we already have in our HTML page:</p>
+        <p id="real-code"> <code>&ltimg</code> <span style="color: rgb(37, 99, 233);">src</span>="images/firefox-icon.png" <span style="color: rgb(37, 99, 233);">alt</span>="My test image" <code>&gt</code> </p>
+        <p style="line-height: 25px;">As we said before, it embeds an image into our page in the position it appears. It does this via the src (source) attribute, which contains the path to our image file.</p>
+        <p style="line-height: 25px;">We have also included an alt (alternative) attribute. In this attribute, you specify descriptive text for users who cannot see the image, possibly because of the following reasons:</p>
+        <ol style="line-height: 25px;">
+          <li>They are visually impaired. Users with significant visual impairments often use tools called screen readers to read out the alt text to them.</li><br>
+          <li>Something has gone wrong causing the image not to display. For example, try deliberately changing the path inside your src attribute to make it incorrect. If you save and reload the page, you should see something like this in place of the image:</li>
+        </ol>
+        <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/alt-text-example.png" alt="image">
+        <p style="line-height: 25px;">The keywords for alt text are "descriptive text". The alt text you write should provide the reader with enough information to have a good idea of what the image conveys. In this example, our current text of "My test image" is no good at all. A much better alternative for our Firefox logo would be "The Firefox logo: a flaming fox surrounding the Earth."</p>
+      </section>
+
+      <!-- ---------------------------link------------------------------>
+
+      <section class="main-section" id="HTML_Links">
+        <header>HTML Links</header>
+        <p>Links are very important — they are what makes the web a web! To add a link, we need to use a simple element — <code>&lta&gt</code> — "a" being the short form for "anchor". To make text within your paragraph into a link, follow these steps:</p> 
+        <ol>
+          <li>Choose some text. We chose the text "Mozilla Manifesto".</li>
+          <li>Wrap the text in an &lta&gt element, as shown below: <br>
+            <p id="real-code" style="padding: 10px 10px;"> <code>&lta&gt</code> Mozilla Manifesto <code>&lt/a&gt</code></p>
+
+          </li>
+          <li>
+            Give the <code>&lta&gt</code> element an href attribute, as shown below <br>
+            <p id="real-code"><code>&lta</code> <span style="color: rgb(70, 80, 226);">href</span>="">Mozilla Manifesto <code>&lt/a></code></p>
+          </li>
+          <li>
+            Fill in the value of this attribute with the web address that you want the link to link to: <br>
+            <p id="real-code"><code>&lta</code> <span style="color: rgb(48, 48, 233);">href</span> ="https://www.mozilla.org/en-US/about/manifesto/"<code>></code> Mozilla Manifesto<code>&lt/a></code></p>
+          </li>
+        </ol>
+
+        <p style="line-height: 25px;">You might get unexpected results if you omit the https:// or http:// part, called the protocol, at the beginning of the web address. After making a link, click it to make sure it is sending you where you wanted it to.</p>
       
       
       </section>  
-        <section class="main-section">
-        <header>java</header>
-        <p></p>  
-          <code>hello world</code>
-        <p></p>
       
-      
+      <!-------------------------------history------------------------------------>
+
+      <section class="main-section" id="HTML_History">
+        <header>HTML History</header>
+        <p style="line-height: 25px;">HTML is a very evolving markup language and has evolved with various versions updating. Long before its revised standards and specifications are carried in, each version has allowed its user to create web pages in a much easier and prettier way and make sites very efficient.</p>  
+        <ul style="line-height: 25px;">
+          <li><code>HTML 1.0</code> was released in 1993 with the intention of sharing information that can be readable and accessible via web browsers. But not many of the developers were involved in creating websites. So the language was also not growing.</li>
+          <br>
+          <li>Then comes the <code>HTML 2.0</code>, published in 1995, which contains all the features of HTML 1.0 along with that few additional features, which remained as the standard markup language for designing and creating websites until January 1997 and refined various core features of HTML.</li>
+          <br>
+          <li>Then comes the <code>HTML 3.0</code>, where Dave Raggett who introduced a fresh paper or draft on HTML. It included improved new features of HTML, giving more powerful characteristics for webmasters in designing web pages. But these powerful features of new HTML slowed down the browser in applying further improvements.</li>
+          <br>
+          <li>Then comes <code>HTML 4.01</code>, which is widely used and was a successful version of HTML before <code>HTML 5.0</code>, which is currently released and used worldwide. <code>HTML 5</code> can be said for an extended version of <code>HTML 4.01</code>, which was published in the year 2012.
+          </li>
+        </ul>
       </section>  
-      <section class="main-section">
-        <header>c++ loops </header>
-        <p></p>  
-        
-        <p></p>
-      
-      
-      </section>  
-      <section class="main-section">
-        <header>javascript event loop</header>
-        <p></p>  
-        
-        <p></p>
-      
-      
-      </section>  
-      <section class="main-section">
-        <header>idea generator</header>
-        <p></p>  
-      
-      
-      </section>  
-      
+      <footer style="font-size: 13px; padding: 100px 10px 0px 0px;"><p>the content in this page has been taking form various sources such as <a href="https://developer.mozilla.org/en-US/">MDN</a>, <a href="http://www.w3schools.com">w3schools</a> ...</p></footer>
     </main>
-
-
-
-
-
-
 
 </body>
 </html>
