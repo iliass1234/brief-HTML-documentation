@@ -4,6 +4,22 @@
     scroll-behavior: smooth;
     
   }
+  #drop-down-btn{
+    visibility: hidden;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100vw; /* Full width */
+    height: 40px;
+    background-color: rgb(40, 58, 73);
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 10px 0px;
+    color: rgb(255, 255, 255);
+
+  }
   #table{
       margin-top: 30px;
       background-color: rgb(236, 255, 236);
@@ -41,6 +57,7 @@
     background-color: #ffffff;    
   }
   #main-doc{
+    visibility: visible;
     padding-top: 0px;
     padding-left: 50px;
     padding-bottom: 40px;
@@ -53,6 +70,9 @@
       line-height: 25px;
       font-size: 25px;
       margin-left: 30px;
+  }
+  #title-slogan{
+    font-size: 60px;color: rgb(0, 0, 0);
   }
   .nav-link{
     scroll-behavior: smooth;
@@ -83,6 +103,7 @@
     margin-top:30px;
   }
   #navbar{
+    visibility: visible;
     box-shadow: 10px 60px 40px rgba(2, 0, 15, 0.349);
     border-top-right-radius: 50px;
     margin-top: 30px;
@@ -94,7 +115,7 @@
     padding: 40px 0px;
     background-color: #d6dee4;
     width:240px;
-    height: 100%;
+    height: 100vh;
     max-width:700px;
   }
   header{
@@ -134,8 +155,34 @@
     width:90%;
     max-width:700px;
 }
-@media(max-width:600px){
-  #navbar{
-    display: none;
+@media(max-width:1000px){
+  #title{
+    font-size: 15px;
+    margin-bottom: 10px;
   }
+  #title-slogan{
+    font-size: 37px;
+  }
+  #navbar{
+    width: 200px;
+    gap: 0px;
+  }
+}
+@media(max-width:800px){
+  #navbar{display: none;}
+  #main-doc{
+    margin-top: 50px;
+    margin-left: auto;
+    width: 95%;
+    padding-left: 0px;
+
+  }
+  #drop-down-btn{
+    visibility: visible;
+  }
+
+}
+@media(min-width: 800px){
+  #navbar{display:flex !important; }
+  
 }
