@@ -8,15 +8,15 @@
     visibility: hidden;
     overflow: hidden;
     background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100vw; /* Full width */
-    height: 40px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 20px;
     background-color: rgb(40, 58, 73);
     text-align: center;
-    font-weight: 800;
-    font-size: 30px;
-    padding: 10px 0px;
+    font-weight: 300;
+    font-size: 20px;
+    padding:7px 0px;
     color: rgb(255, 255, 255);
 
   }
@@ -104,7 +104,7 @@
   }
   #navbar{
     visibility: visible;
-    box-shadow: 10px 60px 40px rgba(2, 0, 15, 0.349);
+    box-shadow: 10px 30px 40px rgba(2, 0, 15, 0.3);
     border-top-right-radius: 50px;
     margin-top: 30px;
     position: fixed;
@@ -115,7 +115,7 @@
     padding: 40px 0px;
     background-color: #d6dee4;
     width:240px;
-    height: 100vh;
+    height: 100%;
     max-width:700px;
   }
   header{
@@ -169,12 +169,17 @@
   }
 }
 @media(max-width:800px){
-  #navbar{display: none;}
+  #navbar{
+    display: none;
+    border-radius: 0px;
+    transform: translateY(-5%);
+  }
   #main-doc{
     margin-top: 50px;
     margin-left: auto;
     width: 95%;
     padding-left: 0px;
+    
 
   }
   #drop-down-btn{
@@ -183,6 +188,11 @@
 
 }
 @media(min-width: 800px){
-  #navbar{display:flex !important; }
+  #navbar{
+    display:flex !important;
+  }
+  
+}
+@media(max-height: 800px){
   
 }
