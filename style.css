@@ -8,17 +8,20 @@
     visibility: hidden;
     overflow: hidden;
     background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 20px;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100vw; /* Full width */
+    height: 40px;
     background-color: rgb(40, 58, 73);
     text-align: center;
-    font-weight: 300;
-    font-size: 20px;
-    padding:7px 0px;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 10px 0px;
     color: rgb(255, 255, 255);
 
+  }
+  #drop-down-btn:hover{
+    cursor:pointer;
   }
   #table{
       margin-top: 30px;
@@ -57,7 +60,6 @@
     background-color: #ffffff;    
   }
   #main-doc{
-    visibility: visible;
     padding-top: 0px;
     padding-left: 50px;
     padding-bottom: 40px;
@@ -103,8 +105,7 @@
     margin-top:30px;
   }
   #navbar{
-    visibility: visible;
-    box-shadow: 10px 30px 40px rgba(2, 0, 15, 0.3);
+    box-shadow: 10px 60px 40px rgba(2, 0, 15, 0.349);
     border-top-right-radius: 50px;
     margin-top: 30px;
     position: fixed;
@@ -115,7 +116,7 @@
     padding: 40px 0px;
     background-color: #d6dee4;
     width:240px;
-    height: 100%;
+    height: 100vh;
     max-width:700px;
   }
   header{
@@ -156,6 +157,15 @@
     max-width:700px;
 }
 @media(max-width:1000px){
+  #drop-down-btn{
+    visibility: visible;
+  }
+  #main-doc{
+    width: 100vw;
+    margin-top: 50px;
+    margin-left: auto;
+    padding-left: 10px;
+  }
   #title{
     font-size: 15px;
     margin-bottom: 10px;
@@ -163,36 +173,19 @@
   #title-slogan{
     font-size: 37px;
   }
-  #navbar{
-    width: 200px;
-    gap: 0px;
-  }
 }
 @media(max-width:800px){
   #navbar{
     display: none;
-    border-radius: 0px;
-    transform: translateY(-5%);
   }
+
   #main-doc{
     margin-top: 50px;
     margin-left: auto;
-    width: 95%;
-    padding-left: 0px;
-    
-
+    padding-left: 10px;
   }
   #drop-down-btn{
     visibility: visible;
   }
 
-}
-@media(min-width: 800px){
-  #navbar{
-    display:flex !important;
-  }
-  
-}
-@media(max-height: 800px){
-  
 }
