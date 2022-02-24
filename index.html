@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="icon" href="https://www.youtube.com/s/desktop/40777624/img/favicon_32x32.png">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +10,23 @@
     <title>Document</title>
 </head>
 <body> 
+
+
+  <div id="drop-down-btn">...</div>
+  <nav id="navbar" >
     
-      <div id="drop-down-btn">Menu</div>
-  <nav id="navbar">
+    <header id="title"><strong id="title-slogan">HTML</strong> Documentation</header>
+    <a class="nav-link" href="#HTML_Introduction">HTML Introduction</a>
+    <a class="nav-link" href="#HTML_Element">HTML Element</a>
+    <a class="nav-link" href="#Nesting_Elements">Nesting elements</a>
+    <a class="nav-link" href="#HTML_Attributes">HTML Attributes</a>
+    <a class="nav-link" href="#HTML_Images">HTML Images</a>
+    <a class="nav-link" href="#HTML_Links">HTML Links</a>
+    <a class="nav-link" href="#HTML_History">HTML History</a>
+    
+  </nav>
   
-        <header id="title"><strong style="font-size: 60px;color: rgb(0, 0, 0);">HTML</strong> Documentation</header>
-        <a class="nav-link" href="#HTML_Introduction">HTML Introduction</a>
-        <a class="nav-link" href="#HTML_Element">HTML Element</a>
-        <a class="nav-link" href="#Nesting_Elements">Nesting elements</a>
-        <a class="nav-link" href="#HTML_Attributes">HTML Attributes</a>
-        <a class="nav-link" href="#HTML_Images">HTML Images</a>
-        <a class="nav-link" href="#HTML_Links">HTML Links</a>
-        <a class="nav-link" href="#HTML_History">HTML History</a>
-        
- </nav>
-    
-    <main id="main-doc">
+  <main id="main-doc">
 
     <!-- ---------------------------intro---------------------------- -->
 
@@ -56,9 +59,9 @@
            </code>
         </div>
       </section>  
-
+      
       <!-- ---------------------------elements---------------------------- -->
-
+      <hr>
       <section class="main-section" id="HTML_Element">
         <header>HTML Element</header>
         <h4>What is an HTML Element?</h4>
@@ -89,7 +92,6 @@
     </section>  
 
     <!-- ---------------------------nested elemnets---------------------------- -->
-
     <section class="main-section" id="Nesting_Elements">
     <header>Nesting Elements</header>
     <p>You can put elements inside other elements too — this is called <strong>nesting</strong> . If we wanted to state that our cat is <strong>very</strong> grumpy, we could wrap the word "very" in a <code>&ltstrong&gt</code> element, which means that the word is to be strongly emphasized:</p>  
@@ -101,8 +103,8 @@
   
   </section> 
 
+  <hr>
       <!-- ---------------------------attr------------------------------>
-
       <section class="main-section" id="HTML_Attributes">
         <header>HTML Attributes</header>
 
@@ -172,7 +174,6 @@
           <li>Choose some text. We chose the text "Mozilla Manifesto".</li>
           <li>Wrap the text in an &lta&gt element, as shown below: <br>
             <p id="real-code" style="padding: 10px 10px;"> <code>&lta&gt</code> Mozilla Manifesto <code>&lt/a&gt</code></p>
-
           </li>
           <li>
             Give the <code>&lta&gt</code> element an href attribute, as shown below <br>
@@ -183,10 +184,7 @@
             <p id="real-code"><code>&lta</code> <span style="color: rgb(48, 48, 233);">href</span> ="https://www.mozilla.org/en-US/about/manifesto/"<code>></code> Mozilla Manifesto<code>&lt/a></code></p>
           </li>
         </ol>
-
         <p style="line-height: 25px;">You might get unexpected results if you omit the https:// or http:// part, called the protocol, at the beginning of the web address. After making a link, click it to make sure it is sending you where you wanted it to.</p>
-      
-      
       </section>  
 
       <!-------------------------------history------------------------------------>
@@ -204,11 +202,11 @@
           <li>Then comes <code>HTML 4.01</code>, which is widely used and was a successful version of HTML before <code>HTML 5.0</code>, which is currently released and used worldwide. <code>HTML 5</code> can be said for an extended version of <code>HTML 4.01</code>, which was published in the year 2012.
           </li>
         </ul>
+        
       </section>  
       <footer style="font-size: 13px; padding: 100px 10px 0px 0px;"><p>the content in this page has been taking form various sources such as <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>, <a href="http://www.w3schools.com" target="_blank">w3schools</a> ...</p></footer>
+      
     </main>
-
-    
-    
+    <script src="index.js"></script>
 </body>
 </html>
