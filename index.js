@@ -5,9 +5,13 @@ console.log(getComputedStyle(nav).display)
 button.onclick = function (){
   if(getComputedStyle(nav).display === 'flex'){
     nav.style.display = 'none'
+    button.innerText = '...'
+
   }else{
     console.log('none')
     nav.style.display = 'flex'
+    button.innerText = 'x'
+
   }
 }
 
