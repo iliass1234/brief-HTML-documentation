@@ -5,10 +5,7 @@ console.log(getComputedStyle(nav).display)
 button.onclick = function (){
   if(getComputedStyle(nav).display === 'flex'){
     nav.style.display = 'none'
-    
-    
-  }
-  else{
+  }else{
     console.log('none')
     nav.style.display = 'flex'
   }
